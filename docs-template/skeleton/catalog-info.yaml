@@ -5,6 +5,8 @@ metadata:
   description: ${{values.description | dump}}
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
+    backstage.io/managed-by-location: https://github.com/officialsamtech/nodejs-app/blob/main/catalog-info.yaml
+    backstage.io/techdocs-ref: url:https://github.com/officialsamtech/nodejs-app/tree/main
 spec:
   type: documentation
   lifecycle: experimental
