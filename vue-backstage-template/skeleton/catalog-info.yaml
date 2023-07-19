@@ -1,13 +1,19 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: ${{values.name | dump}}
+  name: ${{values.component_id | dump}}
   description: ${{values.description | dump}}
   annotations:
     github.com/project-slug: ${{values.destination.owner + "/" + values.destination.repo}}
-    # backstage.io/managed-by-location: https://github.com/officialsamtech/nodejs-app/blob/main/catalog-info.yaml
     backstage.io/techdocs-ref: dir:.
+  links:
+    - url: https://vuejs.org/
+      title: Vue.js Koslog
+      icon: site
+  tags:
+    - website
+    - vue
 spec:
-  type: documentation
+  type: website
   lifecycle: experimental
   owner: ${{values.owner | dump}}

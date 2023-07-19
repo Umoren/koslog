@@ -1,5 +1,8 @@
 {
     "yaml.schemas": {
-        "https://json.schemastore.org/catalog-info.json": "file:///Users/mac/Desktop/sammy23/koslog/docs-template/template.yaml"
+        "https://json.schemastore.org/catalog-info.json": [
+            "file:///Users/mac/Desktop/sammy23/koslog/docs-template/template.yaml",
+            "file:///Users/mac/Desktop/sammy23/koslog/vue-backstage-template/template.yaml"
+        ]
     }
 }
