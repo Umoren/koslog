@@ -42,7 +42,7 @@ backend:
 integrations:
   github:
     - host: github.com
-      token:
+      token: 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
       # apps:
       #   - $include: github-app-koslog-backstage-credentials.yaml
     ### Example for how to add your GitHub Enterprise instance using the API:
@@ -66,17 +66,17 @@ techdocs:
   publisher:
     type: 'awsS3' # Alternatives - 'googleGcs' or 'awsS3'. Read documentation for using alternatives.
     awsS3:
-      bucketName:
-      accountId:
-      region:
+      bucketName: 'techdocsbucket-365'
+      accountId: '221262183359'
+      region: 'us-east-1'
       bucketRootPath: '/'
       s3ForcePathStyle: false
 
 aws:
   accounts:
-    - accountId:
-      accessKeyId:
-      secretAccessKey:
+    - accountId: '221262183359'
+      accessKeyId: 'AKIATHBCA7O7Y5VEQLO7'
+      secretAccessKey: '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'
 
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
@@ -84,8 +84,8 @@ auth:
   providers:
     github:
       development:
-        clientId:
-        clientSecret:
+        clientId: b760ac5105fa2d7d7bfa
+        clientSecret: 97d93601bd8b2e6e94103f157f2349c3c29aba8f
 
 scaffolder:
   defaultAuthor:
