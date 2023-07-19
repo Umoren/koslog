@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: docs-template
+  name: koslog-docs-template
   title: Documentation Template
   description: Create a new standalone documentation project
   annotations:
@@ -12,8 +12,9 @@ metadata:
     - recommended
     - techdocs
     - mkdocs
+    - new
 spec:
-  owner: backstage/techdocs-core
+  owner: koslog
   type: documentation
 
   parameters:
