@@ -43,10 +43,10 @@ site
 
 # Local configuration files
 *.local.yaml
+*-config.yaml
 
 # Sensitive credentials
 *-credentials.yaml
 
 # vscode database functionality support files
 *.session.sql
-app-config.yaml
